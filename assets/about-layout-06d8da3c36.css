@@ -1,0 +1,51 @@
+/* About layout preview. Keep the portrait reveal while fitting desktop screens. */
+.container_black[data-v-a50829e9] {
+  box-sizing: border-box;
+  min-height: 100svh;
+  width: 100%;
+  padding: 76px 6vw 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 28px;
+  overflow: hidden;
+}
+.back-link[data-v-a50829e9] { position: absolute; left: 6vw; top: 22px; padding: 0; margin: 0; font-size: 22px; }
+.bgsnow[data-v-a50829e9] { inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.card[data-v-a50829e9] { position: relative; top: auto; left: auto; transform: none; width: min(100%, 460px); height: auto; align-self: center; margin: 0; }
+.card.dim[data-v-a50829e9] { opacity: .22; }
+.card[data-v-a50829e9]:focus-visible { outline: 1px solid #bfa5c7; outline-offset: 8px; }
+.profile-reveal { display: flex; flex-direction: column; gap: 18px; }
+.hi[data-v-a50829e9], .bio_e[data-v-a50829e9] { position: static; width: 100%; max-width: none; margin: 0; text-align: left; opacity: 1; }
+.hi[data-v-a50829e9] { font-size: clamp(26px, 4.5vw, 38px); line-height: 1.12; }
+.bio_e[data-v-a50829e9] { font-size: 15px; line-height: 1.5; letter-spacing: .045em; }
+.alien[data-v-a50829e9] { position: absolute; top: 90px; left: auto; right: 5vw; width: 20vw; max-width: 180px; pointer-events: none; }
+.mygif[data-v-a50829e9] { position: absolute; top: 32px; left: auto; right: 8vw; width: 64px; margin: 0; pointer-events: none; }
+.work[data-v-a50829e9] { position: static; width: auto; max-width: none; transform: none; margin: 0; gap: 4px; align-items: flex-start; }
+.work p[data-v-a50829e9] { font-size: 24px; line-height: 1.12; }
+.contact-icon-wrapper[data-v-a50829e9] { position: static; display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: none; margin: 0; transform: none; }
+.contact[data-v-a50829e9] { position: static; width: 100%; margin: 0; display: flex; align-items: center; gap: 20px; font-size: 26px; line-height: 1.2; letter-spacing: .12em; }
+.icon[data-v-a50829e9] { position: static; display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
+.item[data-v-a50829e9] { gap: 16px; min-width: 0; }
+.item span[data-v-a50829e9] { font-size: clamp(15px, 2.3vw, 20px); letter-spacing: .08em; overflow-wrap: anywhere; }
+.item img[data-v-a50829e9] { width: 30px; height: auto; flex: 0 0 30px; }
+.bot[data-v-a50829e9] { order: 10; position: static; width: 100%; max-width: none; transform: none; margin: 0; pointer-events: none; }
+@media (min-width: 1000px) and (min-height: 640px) {
+  .container_black[data-v-a50829e9] { height: 100svh; padding: 0; display: block; }
+  .card[data-v-a50829e9] { position: absolute; top: 5svh; left: 7vw; height: 88svh; width: auto; max-width: 49vw; object-fit: contain; object-position: top left; cursor: pointer; }
+  .profile-reveal { position: absolute; left: 6vw; top: 31svh; width: 46vw; z-index: 3; gap: 20px; pointer-events: none; }
+  .hi[data-v-a50829e9] { font-size: clamp(28px, 2.6vw, 46px); opacity: 0; }
+  .bio_e[data-v-a50829e9] { font-size: clamp(14px, 1.05vw, 16px); opacity: 0; }
+  .hi.visible[data-v-a50829e9], .bio_e.visible[data-v-a50829e9] { opacity: 1; }
+  .alien[data-v-a50829e9] { top: 9svh; left: 62vw; right: auto; width: 20vw; max-width: 310px; }
+  .mygif[data-v-a50829e9] { top: 7svh; right: 7vw; width: 8vw; max-width: 130px; }
+  .work[data-v-a50829e9] { position: absolute; top: 33svh; left: 62vw; bottom: auto; }
+  .work p[data-v-a50829e9] { font-size: clamp(22px, 2.1vw, 34px); }
+  .contact-icon-wrapper[data-v-a50829e9] { position: absolute; left: auto; right: 6vw; bottom: 11svh; top: auto; width: 32vw; gap: 22px; }
+  .contact[data-v-a50829e9] { font-size: clamp(24px, 2.1vw, 32px); }
+  .item span[data-v-a50829e9] { font-size: clamp(16px, 1.4vw, 22px); }
+  .bot[data-v-a50829e9] { position: absolute; top: auto; bottom: 14px; left: 6vw; width: 88vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card[data-v-a50829e9], .hi[data-v-a50829e9], .bio_e[data-v-a50829e9] { transition: none; }
+}

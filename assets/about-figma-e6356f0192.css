@@ -1,0 +1,35 @@
+/* About, adapted from Figma 1699:71. Contact artwork exported at 3x. */
+.container_black[data-v-a50829e9] { background:#000; }
+.work[data-v-a50829e9] { display:none; }
+.figma-contact-card { position:relative; width:min(100%,638px); align-self:center; isolation:isolate; }
+.figma-contact-card>img { display:block; width:100%; height:auto; }
+.figma-contact-card>a { position:absolute; display:block; border-radius:4px; transform:rotate(-4.39778deg); }
+.contact-email-hotspot { left:17.5%; top:60%; width:42%; height:9%; }
+.contact-instagram-hotspot { left:18%; top:68.5%; width:32%; height:9%; }
+.figma-contact-card>a:focus-visible { outline:2px solid #fff; outline-offset:3px; background:#fff2; }
+.figma-contact-card>a:hover { background:#ffffff12; }
+@media (min-width:1000px) and (min-height:640px) {
+  body:has(.container_black[data-v-a50829e9]) { background:#000; }
+  .container_black[data-v-a50829e9] { width:min(100vw,160svh); height:min(100svh,62.5vw); min-height:0; margin:auto; top:max(0px,calc((100svh - 62.5vw)/2)); position:relative; overflow:hidden; --about-unit:min(.069444444vw,.111111111svh); }
+  .card[data-v-a50829e9] { left:6.59722%; top:6.33333%; width:40.27778%; height:82.44444%; max-width:none; }
+  .card.dim[data-v-a50829e9] { opacity:.4; }
+  .back-link[data-v-a50829e9] { left:6%; top:2.44444%; font-size:calc(22 * var(--about-unit)); }
+  .alien[data-v-a50829e9] { left:52.01389%; top:14.22222%; width:26.11111%; max-width:none; }
+  .mygif[data-v-a50829e9] { left:80.90278%; top:16.66667%; right:auto; width:11.18056%; max-width:none; }
+  .profile-reveal { left:5.76389%; top:41.77778%; width:44%; gap:calc(36 * var(--about-unit)); }
+  .hi[data-v-a50829e9] { font-size:calc(37.44 * var(--about-unit)); font-weight:700; line-height:1.2; letter-spacing:.045em; }
+  .bio_e[data-v-a50829e9] { font-size:max(14px,calc(15.12 * var(--about-unit))); line-height:1.5; letter-spacing:.045em; }
+  .figma-contact-card { position:absolute; left:55.20833%; top:34.22222%; width:44.30556%; }
+  .bot[data-v-a50829e9] { left:5.97222%; top:91.22222%; bottom:auto; width:88%; }
+}
+@media (max-width:999px), (max-height:639px) {
+ .figma-contact-card { margin-top:-35px; margin-bottom:-20px; width:calc(100% + 32px); max-width:638px; }
+ .profile-reveal { z-index:1; }
+ .hi[data-v-a50829e9] { font-weight:700; letter-spacing:.025em; }
+}
+@media (max-width:999px), (max-height:639px) {
+ .card[data-v-a50829e9] { margin-top:65px; }
+ .card.dim[data-v-a50829e9] { opacity:1; }
+ .alien[data-v-a50829e9] { top:75px; right:95px; width:155px; max-width:40vw; }
+ .mygif[data-v-a50829e9] { top:60px; right:6vw; width:60px; }
+}

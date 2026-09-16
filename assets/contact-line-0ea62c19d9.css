@@ -1,0 +1,19 @@
+/* Contact heading rule, aligned with the contact icons. */
+.contact[data-v-a50829e9] {
+  right: 7.5vw;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+}
+.contact[data-v-a50829e9]::after {
+  content: "";
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 1px;
+  background-color: #777;
+}
+@media screen and (max-width: 768px) {
+  .contact[data-v-a50829e9] { right: auto; gap: 16px; }
+}
