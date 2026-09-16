@@ -1,0 +1,25 @@
+/* Portfolio typography */
+.small-text[data-v-da3a9035] {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.menu li[data-v-da3a9035] {
+  font-size: 18px;
+  line-height: 1.45;
+}
+.bottom-links[data-v-da3a9035] {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.enter-btn[data-v-da3a9035] {
+  font-size: 26px;
+}
+.hover-menu[data-v-da3a9035],
+.hover-menu .left[data-v-da3a9035],
+.hover-menu .right[data-v-da3a9035] {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .enter-btn[data-v-da3a9035] { font-size: 24px; }
+}
